@@ -14,75 +14,65 @@ export async function GET() {
           justifyContent: "center",
           position: "relative",
           overflow: "hidden",
+          background: "#87CEEB",
         }}
       >
-        {/* Gradient Background - matching ChatGPT style */}
+        {/* Bottom-left orange blob */}
         <div
           style={{
             position: "absolute",
-            inset: 0,
-            background: "linear-gradient(135deg, #f97316 0%, #87ceeb 30%, #87ceeb 70%, #f97316 100%)",
+            bottom: "-100px",
+            left: "-100px",
+            width: "500px",
+            height: "500px",
+            borderRadius: "50%",
+            background: "radial-gradient(circle, #F5A962 0%, #E8956A 40%, transparent 70%)",
+            filter: "blur(40px)",
           }}
         />
 
-        {/* Soft overlay for depth */}
+        {/* Top-right orange blob */}
         <div
           style={{
             position: "absolute",
-            inset: 0,
-            background: "radial-gradient(ellipse at center, rgba(135, 206, 235, 0.8) 0%, transparent 70%)",
+            top: "-80px",
+            right: "-80px",
+            width: "400px",
+            height: "400px",
+            borderRadius: "50%",
+            background: "radial-gradient(circle, #F5A962 0%, #E8956A 40%, transparent 70%)",
+            filter: "blur(40px)",
+          }}
+        />
+
+        {/* Bottom-right subtle orange */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: "-50px",
+            right: "200px",
+            width: "300px",
+            height: "300px",
+            borderRadius: "50%",
+            background: "radial-gradient(circle, #F5A962 0%, transparent 60%)",
+            filter: "blur(60px)",
+            opacity: 0.6,
           }}
         />
 
         {/* Content */}
-        <div
+        <span
           style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "32px",
+            fontSize: "96px",
+            fontWeight: 500,
+            color: "white",
+            fontFamily: "system-ui, -apple-system, sans-serif",
+            letterSpacing: "-2px",
             zIndex: 10,
           }}
         >
-          {/* Logo Circle with "A" */}
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              width: "120px",
-              height: "120px",
-              borderRadius: "50%",
-              background: "rgba(255, 255, 255, 0.25)",
-              border: "4px solid rgba(255, 255, 255, 0.9)",
-            }}
-          >
-            <span
-              style={{
-                fontSize: "72px",
-                fontWeight: 700,
-                color: "white",
-                fontFamily: "system-ui, sans-serif",
-              }}
-            >
-              A
-            </span>
-          </div>
-
-          {/* ArthurGPT Text */}
-          <span
-            style={{
-              fontSize: "96px",
-              fontWeight: 600,
-              color: "white",
-              fontFamily: "system-ui, sans-serif",
-              letterSpacing: "-2px",
-              textShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
-            }}
-          >
-            ArthurGPT
-          </span>
-        </div>
+          ArthurGPT
+        </span>
       </div>
     ),
     {
