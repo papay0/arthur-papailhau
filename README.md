@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ArthurGPT
 
-## Getting Started
+A ChatGPT-inspired interactive portfolio that tells my story through an AI conversation interface.
 
-First, run the development server:
+![ArthurGPT Preview](https://arthur-papailhau.com/og-image.png)
+
+## About
+
+**ArthurGPT** reimagines the traditional portfolio as a conversational experience. Instead of static pages, visitors scroll through a "chat" where questions about my background are answered with rich, interactive cards.
+
+### Features
+
+- **Conversational UI** — ChatGPT-style interface with typing animations
+- **Interactive Cards** — Expandable timeline, projects, skills, and contact sections
+- **Dark Mode** — Elegant dark theme following system preferences
+- **Responsive** — Optimized for desktop and mobile
+- **SEO Optimized** — JSON-LD structured data, Open Graph, and more
+
+## Tech Stack
+
+- **Framework:** Next.js 15 (App Router)
+- **Styling:** Tailwind CSS
+- **UI Components:** shadcn/ui
+- **Animations:** CSS + React hooks
+- **Deployment:** Vercel
+
+## Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see it in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Author
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Arthur Papailhau**
+Senior Software Engineer & Founder
 
-## Learn More
+- Previously Tech Lead at **Meta AI** and **Uber**
+- Building AI-powered products in San Francisco
 
-To learn more about Next.js, take a look at the following resources:
+[LinkedIn](https://linkedin.com/in/arthur-papailhau) · [Twitter](https://x.com/papay0) · [Email](mailto:papailhau@gmail.com)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<p align="center">
+  <sub>Built with Next.js and deployed on Vercel</sub>
+</p>
