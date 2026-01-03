@@ -44,6 +44,19 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+
+  /* ChatGPT Theme Colors */
+  --color-chatgpt-bg: var(--chatgpt-bg);
+  --color-chatgpt-sidebar: var(--chatgpt-sidebar);
+  --color-chatgpt-message-user: var(--chatgpt-message-user);
+  --color-chatgpt-message-user-text: var(--chatgpt-message-user-text);
+  --color-chatgpt-input-bg: var(--chatgpt-input-bg);
+  --color-chatgpt-border: var(--chatgpt-border);
+  --color-chatgpt-text-primary: var(--chatgpt-text-primary);
+  --color-chatgpt-text-secondary: var(--chatgpt-text-secondary);
+  --color-chatgpt-accent: var(--chatgpt-accent);
+  --color-chatgpt-accent-light: var(--chatgpt-accent-light);
+  --color-chatgpt-hover: var(--chatgpt-hover);
 }
 
 :root {
@@ -79,6 +92,24 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* ChatGPT Light Theme - Refined Blue Accent */
+  --chatgpt-bg: #ffffff;
+  --chatgpt-sidebar: #f7f7f8;
+  --chatgpt-message-user: #2563eb;
+  --chatgpt-message-user-text: #ffffff;
+  --chatgpt-input-bg: #f4f4f4;
+  --chatgpt-border: #e5e5e5;
+  --chatgpt-text-primary: #0d0d0d;
+  --chatgpt-text-secondary: #676767;
+  --chatgpt-accent: #2563eb;
+  --chatgpt-accent-light: #3b82f6;
+  --chatgpt-hover: #ececec;
+
+  /* Override sidebar variables for ChatGPT theme */
+  --sidebar: #f7f7f8;
+  --sidebar-foreground: #0d0d0d;
+  --sidebar-border: #e5e5e5;
 }
 
 .dark {
@@ -113,6 +144,26 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+
+  /* ChatGPT Dark Theme - Refined Blue Accent */
+  --chatgpt-bg: #212121;
+  --chatgpt-sidebar: #171717;
+  --chatgpt-message-user: #2563eb;
+  --chatgpt-message-user-text: #ffffff;
+  --chatgpt-input-bg: #2f2f2f;
+  --chatgpt-border: #3a3a3a;
+  --chatgpt-text-primary: #ececec;
+  --chatgpt-text-secondary: #8e8e8e;
+  --chatgpt-accent: #2563eb;
+  --chatgpt-accent-light: #3b82f6;
+  --chatgpt-hover: #2f2f2f;
+
+  /* Override sidebar variables for ChatGPT dark theme */
+  --sidebar: #171717;
+  --sidebar-foreground: #ececec;
+  --sidebar-border: #3a3a3a;
+  --background: #212121;
+  --border: #3a3a3a;
 }
 
 @layer base {
@@ -122,4 +173,76 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Typing animation for intro */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+@keyframes typing-dot {
+  0%, 20% { opacity: 0.3; }
+  40% { opacity: 1; }
+  60%, 100% { opacity: 0.3; }
+}
+
+.typing-cursor {
+  animation: blink 1s infinite;
+}
+
+.typing-dot:nth-child(1) { animation: typing-dot 1.4s infinite 0s; }
+.typing-dot:nth-child(2) { animation: typing-dot 1.4s infinite 0.2s; }
+.typing-dot:nth-child(3) { animation: typing-dot 1.4s infinite 0.4s; }
+
+/* Smooth scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--chatgpt-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--chatgpt-text-secondary);
+}
+
+/* Message appear animation */
+@keyframes message-appear {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-animate {
+  animation: message-appear 0.3s ease-out forwards;
+}
+
+/* Card expand animation */
+@keyframes card-expand {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 1000px;
+  }
+}
+
+.card-expand-animate {
+  animation: card-expand 0.4s ease-out forwards;
+  overflow: hidden;
 }
