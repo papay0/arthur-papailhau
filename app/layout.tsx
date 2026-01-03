@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 const siteUrl = "https://arthur-papailhau.com";
 const siteName = "Arthur Papailhau | ArthurGPT";
 const siteDescription = "Senior Software Engineer & Founder based in San Francisco. Previously Tech Lead at Meta AI (Core Experience Team) and iOS Tech Lead at Uber (6.5 years). Building AI-powered products and SaaS. Expert in iOS, React, TypeScript, and machine learning.";
-const siteImage = `${siteUrl}/og-image.png`;
+const siteImage = `${siteUrl}/api/og`;
 
 export const viewport: Viewport = {
   width: "device-width",

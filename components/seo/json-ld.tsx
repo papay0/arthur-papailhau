@@ -10,7 +10,7 @@ export function JsonLd() {
     givenName: "Arthur",
     familyName: "Papailhau",
     url: baseUrl,
-    image: `${baseUrl}/og-image.png`,
+    image: `${baseUrl}/api/og`,
     email: "papailhau@gmail.com",
     jobTitle: "Senior Software Engineer & Founder",
     description:

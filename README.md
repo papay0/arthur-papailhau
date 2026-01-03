@@ -2,7 +2,7 @@
 
 A ChatGPT-inspired interactive portfolio that tells my story through an AI conversation interface.
 
-![ArthurGPT Preview](https://arthur-papailhau.com/og-image.png)
+![ArthurGPT Preview](https://arthur-papailhau.com/api/og)
 
 ## About
 
