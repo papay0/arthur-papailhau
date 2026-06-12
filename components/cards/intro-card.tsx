@@ -28,10 +28,10 @@ export function IntroCard({ className }: IntroCardProps) {
           </div>
           <div className="flex-1 min-w-0">
             <h3 className="text-xl font-semibold text-chatgpt-text-primary">Arthur Papailhau</h3>
-            <p className="text-chatgpt-text-secondary text-sm mt-0.5">Senior Software Engineer & Founder</p>
+            <p className="text-chatgpt-text-secondary text-sm mt-0.5">Member of Technical Staff at OpenAI</p>
             <div className="flex items-center justify-center sm:justify-start gap-1.5 mt-2">
               <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-chatgpt-accent/10 text-chatgpt-accent">
-                Available for hire
+                Building Codex
               </span>
             </div>
           </div>
@@ -72,7 +72,7 @@ export function IntroCard({ className }: IntroCardProps) {
             </div>
             <div>
               <p className="text-xs text-chatgpt-text-secondary">Focus</p>
-              <p className="text-sm text-chatgpt-text-primary font-medium">AI Products</p>
+              <p className="text-sm text-chatgpt-text-primary font-medium">Codex</p>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ export function IntroCard({ className }: IntroCardProps) {
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 px-4 py-3 rounded-xl bg-chatgpt-accent/10 border border-chatgpt-accent/20">
             <span className="inline-flex items-center justify-center h-6 px-2 rounded-md text-xs font-semibold bg-chatgpt-accent text-white flex-shrink-0">Now</span>
-            <span className="text-sm text-chatgpt-text-primary">Founder building <span className="font-semibold text-chatgpt-accent">AI-powered</span> SaaS products</span>
+            <span className="text-sm text-chatgpt-text-primary">Building <span className="font-semibold text-chatgpt-accent">Codex</span> at OpenAI</span>
           </div>
         </div>
       </div>

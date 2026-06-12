@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Arthur Papailhau | ArthurGPT Portfolio",
     short_name: "ArthurGPT",
     description:
-      "Senior Software Engineer & Founder. Previously Tech Lead at Meta AI and Uber.",
+      "Member of Technical Staff at OpenAI working on Codex. Previously Tech Lead at Meta AI and Uber.",
     start_url: "/",
     display: "standalone",
     background_color: "#212121",

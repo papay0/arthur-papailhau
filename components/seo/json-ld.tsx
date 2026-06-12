@@ -12,9 +12,9 @@ export function JsonLd() {
     url: baseUrl,
     image: `${baseUrl}/api/og`,
     email: "papailhau@gmail.com",
-    jobTitle: "Senior Software Engineer & Founder",
+    jobTitle: "Member of Technical Staff",
     description:
-      "Senior Software Engineer & Founder based in San Francisco. Previously Tech Lead at Meta AI and iOS Tech Lead at Uber. Building AI-powered products.",
+      "Member of Technical Staff at OpenAI working on Codex. Previously Tech Lead at Meta AI and iOS Tech Lead at Uber. Based in San Francisco.",
     address: {
       "@type": "PostalAddress",
       addressLocality: "San Francisco",
@@ -35,8 +35,9 @@ export function JsonLd() {
     ],
     worksFor: {
       "@type": "Organization",
-      name: "Stealth AI Startup",
-      description: "AI-powered SaaS products",
+      name: "OpenAI",
+      url: "https://openai.com/",
+      description: "AI research and deployment company",
     },
     knowsAbout: [
       "iOS Development",
@@ -44,6 +45,9 @@ export function JsonLd() {
       "TypeScript",
       "Machine Learning",
       "Artificial Intelligence",
+      "Codex",
+      "AI Agents",
+      "Developer Tools",
       "Swift",
       "Python",
       "Full Stack Development",
@@ -65,7 +69,7 @@ export function JsonLd() {
     "@id": baseUrl,
     name: "Arthur Papailhau | ArthurGPT Portfolio",
     description:
-      "Interactive portfolio of Arthur Papailhau - Senior Software Engineer & Founder. Previously Tech Lead at Meta AI and Uber.",
+      "Interactive portfolio of Arthur Papailhau - Member of Technical Staff at OpenAI working on Codex. Previously Tech Lead at Meta AI and Uber.",
     url: baseUrl,
     mainEntity: {
       "@id": `${baseUrl}/#person`,
@@ -103,12 +107,13 @@ export function JsonLd() {
         position: 1,
         item: {
           "@type": "Role",
-          roleName: "Founder",
-          startDate: "2025-10",
+          roleName: "Member of Technical Staff",
+          startDate: "2026-05",
           memberOf: {
             "@type": "Organization",
-            name: "AI Startup (Stealth)",
-            description: "Building AI-powered SaaS products",
+            name: "OpenAI",
+            url: "https://openai.com/",
+            description: "Working on Codex",
           },
         },
       },
@@ -117,9 +122,25 @@ export function JsonLd() {
         position: 2,
         item: {
           "@type": "Role",
+          roleName: "Co-Founder",
+          startDate: "2025-11",
+          endDate: "2026-03",
+          memberOf: {
+            "@type": "Organization",
+            name: "Appily",
+            url: "https://www.appily.dev/",
+            description: "Vibe coding platform to build native mobile apps",
+          },
+        },
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        item: {
+          "@type": "Role",
           roleName: "Tech Lead, Core Experience Team",
-          startDate: "2024-01",
-          endDate: "2025-10",
+          startDate: "2024-06",
+          endDate: "2025-11",
           memberOf: {
             "@type": "Organization",
             name: "Meta AI",
@@ -130,7 +151,7 @@ export function JsonLd() {
       },
       {
         "@type": "ListItem",
-        position: 3,
+        position: 4,
         item: {
           "@type": "Role",
           roleName: "iOS Tech Lead",
@@ -195,7 +216,7 @@ export function JsonLd() {
         name: "Who is Arthur Papailhau?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Arthur Papailhau is a Senior Software Engineer and Founder based in San Francisco. He was previously Tech Lead at Meta AI on the Core Experience Team and iOS Tech Lead at Uber for 6.5 years, where he led approximately 20 engineers.",
+          text: "Arthur Papailhau is a Member of Technical Staff at OpenAI working on Codex, based in San Francisco. He was previously Tech Lead at Meta AI on the Core Experience Team and iOS Tech Lead at Uber for 6.5 years, where he led approximately 20 engineers.",
         },
       },
       {
@@ -203,7 +224,7 @@ export function JsonLd() {
         name: "What is Arthur Papailhau's experience?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Arthur has over 8 years of experience in software engineering. He worked at Uber from 2017-2024 as iOS Tech Lead, then at Meta AI in 2024-2025 as Tech Lead for the Core Experience Team. He is currently a Founder building AI-powered SaaS products.",
+          text: "Arthur has over 8 years of experience in software engineering. He worked at Uber from 2017-2024 as iOS Tech Lead, then at Meta AI from 2024-2025 as Tech Lead for the Core Experience Team, co-founded Appily from 2025-2026, and is currently a Member of Technical Staff at OpenAI working on Codex.",
         },
       },
       {

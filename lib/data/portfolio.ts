@@ -45,26 +45,39 @@ export interface ChatMessage {
 // Timeline Data
 export const timelineData: TimelineEntry[] = [
   {
-    id: "founder",
-    role: "Founder",
-    company: "Stealth AI Startup",
+    id: "openai",
+    role: "Member of Technical Staff",
+    company: "OpenAI",
     location: "San Francisco, USA",
-    period: "Oct 2025 – Present",
-    description: "Building AI-powered SaaS products end-to-end from ideation to production and early users.",
+    period: "May 2026 – Present",
+    description: "Working on Codex at OpenAI.",
     highlights: [
-      "Ideate (ideate.build): Describe an app idea and get a working prototype in seconds",
-      "Appily (appily.dev): Prompt-to-App-Store platform, no coding required",
-      "Teaching vibe coding and AI agents",
+      "Building Codex",
+      "Helping shape the future of AI-assisted software development",
     ],
-    technologies: ["Next.js", "TypeScript", "AI/ML", "Vercel", "Stripe"],
+    technologies: ["Codex", "AI Agents", "Developer Tools", "Software Engineering"],
+    type: "work",
+  },
+  {
+    id: "appily",
+    role: "Co-Founder",
+    company: "Appily",
+    location: "San Francisco, USA",
+    period: "Nov 2025 – Mar 2026",
+    description: "Co-founded Appily, a vibe coding platform to build native mobile apps from prompts.",
+    highlights: [
+      "Built a prompt-to-App-Store platform for native mobile apps",
+      "Developed AI agent workflows and scalable SaaS infrastructure",
+    ],
+    technologies: ["AI Agents", "Mobile", "SaaS", "Automation"],
     type: "work",
   },
   {
     id: "meta",
-    role: "Senior Fullstack AI Infra Engineer · Tech Lead",
+    role: "Senior Software Engineer · Tech Lead",
     company: "Meta AI",
     location: "San Francisco, USA",
-    period: "2024 – 2025",
+    period: "Jun 2024 – Nov 2025",
     description: "Tech Lead on the Core Experience team - the central MetaAI team working on all AI experiences across Messenger, Instagram, Facebook, WhatsApp, and the Meta AI app.",
     highlights: [
       "Search integration and feedback loop",
@@ -234,9 +247,9 @@ export const chatFlowData: ChatMessage[] = [
   {
     id: "intro-a",
     type: "ai",
-    content: `**Arthur Papailhau** is a Senior Software Engineer and Founder based in **San Francisco**.
+    content: `**Arthur Papailhau** is a Member of Technical Staff at **OpenAI**, based in **San Francisco**.
 
-He recently left **Meta AI** to pursue his passion for building AI-powered products. Here's a quick overview:`,
+He works on **Codex** and previously led AI infrastructure and product experiences at **Meta AI** and **Uber**. Here's a quick overview:`,
     cardType: "intro",
     sectionId: "about",
   },
@@ -251,9 +264,9 @@ He recently left **Meta AI** to pursue his passion for building AI-powered produ
     type: "ai",
     content: `Arthur has an impressive track record spanning **8+ years** in tech, with leadership roles at some of the world's most innovative companies:
 
+- **OpenAI** → Member of Technical Staff working on Codex
 - **Meta AI** → Tech Lead on Core Experience team
 - **Uber** → iOS Tech Lead, led ~20 engineers over 6.5 years
-- **Sigfox & IBM** → Full-stack development
 
 Click on each entry below to expand and see more details:`,
     cardType: "timeline",

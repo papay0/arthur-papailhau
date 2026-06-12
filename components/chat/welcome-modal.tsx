@@ -38,7 +38,7 @@ export function WelcomeModal({ className }: WelcomeModalProps) {
           </DialogTitle>
 
           <DialogDescription className="text-chatgpt-text-secondary text-sm">
-            This is Arthur Papailhau's portfolio disguised as ChatGPT. Scroll through the chat to explore.
+            This is Arthur Papailhau&apos;s portfolio disguised as ChatGPT. Scroll through the chat to explore.
           </DialogDescription>
         </DialogHeader>
 

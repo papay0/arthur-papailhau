@@ -6,7 +6,7 @@ My personal portfolio designed to look and feel exactly like ChatGPT. Visitors "
 
 ## Tech Stack
 
-Next.js 15 · Tailwind CSS · shadcn/ui · TypeScript · Vercel
+Next.js 16 · Tailwind CSS · shadcn/ui · TypeScript · Vercel
 
 ## Run Locally
 
@@ -16,7 +16,7 @@ npm install && npm run dev
 
 ## Author
 
-**Arthur Papailhau** — Senior Software Engineer & Founder
-Previously Tech Lead at Meta AI and Uber
+**Arthur Papailhau** — Member of Technical Staff at OpenAI
+Working on Codex. Previously Tech Lead at Meta AI and Uber.
 
 [LinkedIn](https://linkedin.com/in/arthur-papailhau) · [Twitter](https://x.com/papay0) · [Email](mailto:papailhau@gmail.com)

@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 const siteUrl = "https://arthur-papailhau.com";
 const siteName = "Arthur Papailhau | ArthurGPT";
-const siteDescription = "Senior Software Engineer & Founder based in San Francisco. Previously Tech Lead at Meta AI (Core Experience Team) and iOS Tech Lead at Uber (6.5 years). Building AI-powered products and SaaS. Expert in iOS, React, TypeScript, and machine learning.";
+const siteDescription = "Member of Technical Staff at OpenAI working on Codex. Previously Tech Lead at Meta AI (Core Experience Team) and iOS Tech Lead at Uber (6.5 years). Based in San Francisco.";
 const siteImage = `${siteUrl}/api/og`;
 
 export const viewport: Viewport = {
@@ -33,13 +33,15 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   // Basic Meta
   title: {
-    default: "Arthur Papailhau | Senior Software Engineer & Founder",
+    default: "Arthur Papailhau | OpenAI Codex",
     template: "%s | Arthur Papailhau",
   },
   description: siteDescription,
   keywords: [
     "Arthur Papailhau",
     "Software Engineer",
+    "OpenAI",
+    "Codex",
     "Tech Lead",
     "Meta AI",
     "Uber",
@@ -47,7 +49,6 @@ export const metadata: Metadata = {
     "React Developer",
     "TypeScript",
     "San Francisco",
-    "Founder",
     "AI Engineer",
     "Machine Learning",
     "Mobile Developer",
@@ -93,14 +94,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: siteName,
-    title: "Arthur Papailhau | Senior Software Engineer & Founder",
+    title: "Arthur Papailhau | OpenAI Codex",
     description: siteDescription,
     images: [
       {
         url: siteImage,
         width: 1200,
         height: 630,
-        alt: "Arthur Papailhau - Senior Software Engineer & Founder",
+        alt: "Arthur Papailhau - OpenAI Codex",
         type: "image/png",
       },
     ],
@@ -111,8 +112,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@papay0",
     creator: "@papay0",
-    title: "Arthur Papailhau | Senior Software Engineer & Founder",
-    description: "Tech Lead at Meta AI & Uber. Founder building AI-powered products. Expert in iOS, React, TypeScript, and ML.",
+    title: "Arthur Papailhau | OpenAI Codex",
+    description: "Member of Technical Staff at OpenAI working on Codex. Previously Tech Lead at Meta AI and iOS Tech Lead at Uber.",
     images: [siteImage],
   },
 
